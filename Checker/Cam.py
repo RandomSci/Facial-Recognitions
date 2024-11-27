@@ -58,7 +58,7 @@ try:
                     face_encoding = face_recognition.face_encodings(cropped_face_rgb)
                     if face_encoding:
                         face_encoding = face_encoding[0]
-                        print(f"Comparing face encoding: {face_encoding}")  # Log the encoding
+                        print(f"Comparing face encoding: {face_encoding}")  
 
                         matched = False
                         for known_encoding, name in zip(known_encodings, known_names):
