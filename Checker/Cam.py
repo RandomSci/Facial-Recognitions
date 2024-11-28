@@ -44,7 +44,7 @@ try:
         results = model.predict(frame, conf=0.5)
 
         for result in results[0].boxes:
-            cls = int(result.cls[0])  
+            cls = int(result.cls[0])
             label = model.names[cls]
             if label == "person":
                 x1, y1, x2, y2 = map(int, result.xyxy[0])  
